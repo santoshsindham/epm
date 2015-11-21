@@ -17,9 +17,25 @@
 		<g:layoutHead/>
 	</head>
 	<body>
-		<div id="grailsLogo" role="banner"><a href="http://grails.org"><asset:image src="grails_logo.png" alt="Grails"/></a></div>
+		<nav class="navbar navbar-inverse" style="margin-bottom: 0px">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <a class="navbar-brand" href="#">
+		        <img alt="Brand" src="/epm/assets/53777.gif">
+		      </a>
+		    </div>
+		    <h2><span class="label label-default"><em>enterprise Project Metrics Management  </em><kbd>ePMm</kbd></span></h2>
+		  	<ul class="breadcrumb">
+			  <!-- <li role="presentation" class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li> -->			  	
+			  <li role="presentation"><a href="${createLink(controller:'home', action:'show')}"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+			  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Projects</a></li>
+			  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Metrics</a></li>
+			  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> Dashboard</a></li>
+			  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Contacts</a></li>
+			</ul>
+			</div>
+		</nav>
 		<g:layoutBody/>
-		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 	</body>
 </html>
