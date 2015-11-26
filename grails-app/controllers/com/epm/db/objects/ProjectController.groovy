@@ -4,6 +4,7 @@ package com.epm.db.objects
 
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
+import java.text.SimpleDateFormat
 
 @Transactional(readOnly = true)
 class ProjectController {
@@ -52,6 +53,19 @@ class ProjectController {
 
     @Transactional
     def update(Project projectInstance) {
+		
+		def f = new SimpleDateFormat("MM/dd/yyyy")
+		
+		if (projectInstance.start_Date == null && (params['start_Date_value'] != null && params['start_Date_value'].size() != 0)){
+			projectInstance.start_Date = f.parse(params['start_Date_value'])
+			projectInstance.errors = null
+		}		
+		
+		if (projectInstance.end_Date == null && (params['end_Date_value'] != null && params['end_Date_value'].size() != 0)){
+			projectInstance.end_Date = f.parse(params['end_Date_value'])
+			projectInstance.errors = null
+		}
+		
         if (projectInstance == null) {
             notFound()
             return

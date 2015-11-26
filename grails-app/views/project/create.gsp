@@ -6,15 +6,18 @@
 		<title><g:message code="default.create.label" args="[entityName]" /></title>
 	</head>
 	<body>
+		<div class='container'>
 		<a href="#create-project" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-		<div class="nav" role="navigation">
-			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-				<li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-			</ul>
-		</div>
-		<div id="create-project" class="content scaffold-create" role="main">
-			<h1><g:message code="default.create.label" args="[entityName]" /></h1>
+		
+		<div id="create-project" class="content scaffold-create" role="main">			
+			<div class="row">
+				<div class="col-md-8">
+					<h3><span class="label label-default">Please enter below details to create a New Project</span> <span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span></h3>
+				</div>
+				<div class="col-md-1 col-md-offset-1">
+					<g:link class="btn btn-success" action="index"><span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>  Back to Projects List</g:link>
+				</div>
+			</div>
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
@@ -25,14 +28,19 @@
 				</g:eachError>
 			</ul>
 			</g:hasErrors>
+			<div class="container">
 			<g:form url="[resource:projectInstance, action:'save']" >
 				<fieldset class="form">
 					<g:render template="form"/>
 				</fieldset>
-				<fieldset class="buttons">
-					<g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
-				</fieldset>
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2">
+					<g:submitButton name="create" class="btn btn-success btn-lg btn-block" value="Create Project" />
+					</div>
+				</div>
 			</g:form>
+			</div>
+		</div>
 		</div>
 	</body>
 </html>

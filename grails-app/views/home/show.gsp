@@ -52,5 +52,87 @@
         <span class="sr-only">Next</span>
       </a>
     </div>
+    
+    
+	<div class="container">
+	
+	
+      
+      <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img class="img-circle" src="/epm/assets/graph4.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Schedule Variance</h2>
+          <pre>(Actual Duration - Planned Duration)/ (Planned Duration) *100 for each milestone(test phases)</pre>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="/epm/assets/graph5.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Test Execution productivity</h2>
+          <pre>Number of Test Cases(Scripts) Executed / Effort in Person Days </pre>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="/epm/assets/graph6.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Effort Variance</h2>
+          <pre>(Actual Effort - Planned Effort)/ (Planned Effort) *100 for each milestone(test phases)</pre>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="/epm/assets/graph1.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Defect Leakage</h2>
+          <pre>Total number of defects leaked in to UAT and Prod/Total number of defects found in the project(System testing, UAT and Prod)</pre>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="/epm/assets/graph2.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Test Case Design Productivity</h2>
+          <pre>Number of Test Cases(Scripts) Created / Effort in Person Days</pre>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img class="img-circle" src="/epm/assets/graph3.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>Requirement Stability Index</h2>
+          <pre>(Total number of requirements -(Total number of requirements added+Total number of requirements modified+Total number of requirement deleted)/Total number of requirements*100</pre>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+	
+	
+    <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Defect Identification Efficiency <span class="text-muted">(percentage)</span></h2>
+          <pre class="lead">(Total no of application defects found by test team -Total number of defects rejected by the customer) / Total Defects Logged in the project life cycle</pre>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="/epm/assets/graph1.jpg" alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Test Coverage <span class="text-muted">(number)</span></h2>
+          <pre class="lead">((Total number of testable requirements mapped to test cases or Scripts ) /(Total number of baselined testable requirements)*100</pre>
+        </div>
+        <div class="col-md-5 col-md-pull-7">
+          <img class="featurette-image img-responsive center-block" src="/epm/assets/graph2.jpg"  alt="Generic placeholder image">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">% Automated integration / regression test <span class="text-muted">(percentage)</span></h2>
+          <pre class="lead">Degree of automation = # automated test cases / # test cases</pre>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="/epm/assets/graph3.jpg"  alt="Generic placeholder image">
+        </div>
+      </div>
+      
+
+      
+    </div>
 	</body>
 </html>
