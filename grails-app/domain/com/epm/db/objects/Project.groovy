@@ -8,7 +8,7 @@ class Project {
 	Date start_Date
 	Date end_Date
 	String sla_Status
-	
+		static hasMany =[milestones: Milestone, metrics: Metrics]
 	
     static constraints = {
 		project_Name (blank: false)
