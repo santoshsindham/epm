@@ -32,7 +32,7 @@
 			  <li role="presentation"><a href="${createLink(controller:'project', action:'index')}"><span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> Projects</a></li>
 			  <li role="presentation"><a href="${createLink(controller:'milestone', action:'index')}"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Milestones</a></li>
 			  <li role="presentation"><a href="${createLink(controller:'metrics', action:'index')}"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Metrics</a></li>
-			  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> Dashboard</a></li>
+			  <li role="presentation"><a href="${createLink(controller:'dashboard', action:'index')}"><span class="glyphicon glyphicon-dashboard" aria-hidden="true"></span> Dashboard</a></li>
 			  <li role="presentation"><a href="#"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Contacts</a></li>
 			</ul>
 			</div>			
